@@ -9,7 +9,7 @@ distance=behavior(:,5);
 
 calcium=xlsread('M041_NSF_saline5.csv');
 
-calcium_cell_data=calcium(:,2:end)/1000000; %%%deltaF/F percentage of F/F
+calcium_cell_data=calcium(:,2:end)*100; %%%deltaF/F percentage of F/F
 %%%% ?Event averaged? trigger time
 Time=[0:0.1:900.2]; %%x axis from -1.5 s to 12 s
 num_cell=size(calcium_cell_data,2); %%% Neuron number, from column of calcium_cell_data
